@@ -95,11 +95,19 @@ body {
     /* background-color: yellow; */
 }
 #heroleft .elem {
+    position: relative;
     height: 8.8vw;
     overflow: hidden;
 }
 
+#heroleft .elem h1:nth-child(1) {
+    top: 0;
+}
+
 #heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
     line-height: 1;
     font-family: "Anton";
     text-transform: uppercase;
