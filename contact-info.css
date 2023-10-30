@@ -173,7 +173,7 @@ form {
 
 textarea.input {
     padding: 0.8rem 1.2rem;
-    min-height: 150px;
+    min-height: 155px;
     border-radius: 22px;
     resize: none;
     overflow-y: auto;
@@ -279,7 +279,9 @@ form .btn:hover {
     color: #ffffff;
     font-weight: 700;
 }
-
+.info p{
+    color: white;
+}
 .text {
     color: #ffffff;
     margin: 1.5rem 0 2rem 0;
@@ -307,7 +309,7 @@ form .btn:hover {
 }
 
 .social-media {
-    padding: 4.5rem 0 0 0;
+    padding: 2.5rem 0 0 0;
 }
 
 .social-media p {
