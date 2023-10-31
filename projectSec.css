@@ -53,6 +53,12 @@ body {
     /* border: 2px solid red; */
 }
 
+#nmid h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 100;
+}
+
 .hover-underline-animation {
     display: inline-block;
     position: relative;

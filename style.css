@@ -106,6 +106,7 @@ body {
 }
 
 #hero {
+    padding-top: 50px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -164,9 +165,11 @@ body {
 }
 
 #heroright p {
-    font-size: 14px;
-    text-align: right;
+    font-size: 14.5px;
+    text-align: center;
+    padding-right: 25px;
     font-weight: 300;
+    overflow: hidden;
 }
 
 #heroright #imagediv {
@@ -183,4 +186,124 @@ body {
 
 #heroright p:nth-child(3) {
     margin-bottom: 100px;
+}
+
+.profile-card {
+    position: relative;
+    margin: 60px 0 20px 0;
+    pointer-events: all;
+    width: 350px;
+    height: 220px;
+    background: #ffffffa1;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.profile-card:hover {
+    height: 350px;
+    background: #46068582;
+}
+
+.imgBx {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 175px;
+    height: 180px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.profile-card:hover .imgBx {
+    width: 230px;
+    height: 245px;   
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card .profile-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.profile-card .profile-content .profile-details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.profile-card:hover .profile-content .profile-details{
+    transform: translateY(0px);
+}
+.profile-card .profile-content .profile-details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #3f3f3f;
+    line-height: 1.2em;
+    transition: 0.5s;
+}
+.profile-card:hover .profile-content .profile-details h2 {
+    color: #fff;
+}
+.profile-card .profile-content .profile-details h2 span {
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.profile-card .profile-content .profile-details .data {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.profile-card .profile-content .profile-details .data h3 {
+    font-size: 1em;
+    color: #b0b0b0;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.profile-card .profile-content .profile-details .data h3 span {
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.profile-card .profile-content .profile-details .actionBtn {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+.profile-card .profile-content .profile-details .actionBtn button {
+    padding: 10px 30px;
+    border-radius: 3px;
+    border:none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #b34caf6f;
+    color: #b0b0b0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.profile-card .profile-content .profile-details .actionBtn button:hover {
+    transform: scale(1.15);
+    color: #fff;
+}
+.profile-card .profile-content .profile-details .actionBtn button:nth-child(2) {
+    border: 1;
 }
