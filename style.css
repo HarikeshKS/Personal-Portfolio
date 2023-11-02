@@ -151,8 +151,20 @@ body {
     font-size: 1.3vw;
     margin-top: 2vw;
     font-family: "Anton";
+    background: #ffffffa1;
+    /* border-style: none; */
+    color:#3f3f3f;
+    border-radius: 5px;
+    border-width: 0px;
+    box-shadow: 2px 2px 5px #121212bb;
+    cursor: pointer;
+    transition: 0.5s;
 }
-
+#heroleft button:hover {
+    color:#000;
+    background: #fff;
+    letter-spacing: 2px;
+}
 #heroright {
     width: 25%;
     min-width: 25%;
@@ -170,18 +182,6 @@ body {
     padding-right: 25px;
     font-weight: 300;
     overflow: hidden;
-}
-
-#heroright #imagediv {
-    width: 100%;
-    height: 170px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /* background-color: red; */
-    /* background-image: url(https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=1894&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
-    background-image: url(./bg-images/bg-contact.png);
-    background-size: contain;
-    background-position: center;
 }
 
 #heroright p:nth-child(3) {
