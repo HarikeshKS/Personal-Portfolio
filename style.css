@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Tilt Neon";
+    font-family: "Tilt Neon", sans-serif;
     box-sizing: border-box;
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 #hero {
-    padding-top: 50px;
+    padding-top: 20px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -138,7 +138,7 @@ body {
     top: 100%;
     left: 0;
     line-height: 1;
-    font-family: "Anton";
+    font-family: "Anton", sans-serif;
     text-transform: uppercase;
     font-weight: 100;
     color: white;
