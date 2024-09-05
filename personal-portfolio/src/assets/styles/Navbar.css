@@ -1,0 +1,50 @@
+#nav {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#nav img {
+    height: 80px;
+    mix-blend-mode: color-dodge;
+}
+
+#nleft, #nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nleft a, #nright a {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: whitesmoke;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: whitesmoke;
+    transition: transform 0.18s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+}

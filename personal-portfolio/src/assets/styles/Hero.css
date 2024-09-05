@@ -1,0 +1,49 @@
+#hero {
+    padding-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#heroleft {
+    min-width: 50%;
+}
+
+#heroleft .elem {
+    position: relative;
+    height: 8.8vw;
+    overflow: hidden;
+}
+
+#heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 1;
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 9vw;
+}
+
+#heroleft button {
+    padding: .5vw 2vw;
+    font-size: 1.3vw;
+    margin-top: 2vw;
+    font-family: "Anton";
+    background: #ffffffa1;
+    color: #3f3f3f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#heroleft button:hover {
+    color: #000;
+    background: #fff;
+    letter-spacing: 2px;
+}
